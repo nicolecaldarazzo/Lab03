@@ -1,14 +1,16 @@
 import time
 
 import multiDictionary as md
+from multiDictionary import MultiDictionary
+
 
 class SpellChecker:
 
     def __init__(self):
-        pass
+        self.multiDiz = MultiDictionary()
 
     def handleSentence(self, txtIn, language):
-        pass
+        return self.multiDiz.searchWord(txtIn,language)
 
     def printMenu(self):
         print("______________________________\n" +
@@ -22,5 +24,3 @@ class SpellChecker:
               "______________________________\n")
 
 
-def replaceChars(text):
-    pass

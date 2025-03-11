@@ -11,22 +11,28 @@ while(True):
     if int(txtIn) == 1:
         print("Inserisci la tua frase in Italiano\n")
         txtIn = input()
-        sc.handleSentence(txtIn,"italian")
+        errori = sc.handleSentence(txtIn,"italian")
+        for errore in errori:
+            print(errore)
         continue
 
-    if int(txtIn) == 2:
+    elif int(txtIn) == 2:
         print("Inserisci la tua frase in Inglese\n")
         txtIn = input()
-        sc.handleSentence(txtIn,"english")
+        errori=sc.handleSentence(txtIn,"english")
+        for errore in errori:
+            print(errore)
         continue
 
-    if int(txtIn) == 3:
+    elif int(txtIn) == 3:
         print("Inserisci la tua frase in Spagnolo\n")
         txtIn = input()
-        sc.handleSentence(txtIn,"spanish")
+        errori=sc.handleSentence(txtIn,"spanish")
+        for errore in errori:
+            print(errore)
         continue
 
-    if int(txtIn) == 4:
+    elif int(txtIn) == 4:
         break
 
 
