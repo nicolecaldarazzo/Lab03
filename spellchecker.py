@@ -10,7 +10,7 @@ class SpellChecker:
         self.multiDiz = MultiDictionary()
 
     def handleSentence(self, txtIn, language):
-        return self.multiDiz.searchWord(txtIn,language)
+        return self.multiDiz.searchWordDichotomic(txtIn,language)
 
     def printMenu(self):
         print("______________________________\n" +
